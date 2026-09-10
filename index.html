@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fardin Rehman — Computer Science Engineer | Full-Stack Developer | AI/ML</title>
+  <meta name="description" content="Fardin Rehman is a Computer Science Engineering student, Full-Stack Developer, and AI/ML enthusiast based in Hassan, Karnataka, India. Building practical software and intelligent solutions." />
+  <meta name="keywords" content="Fardin Rehman, Full-Stack Developer, Computer Science Engineer, AI/ML, React, Node.js, Python, Hassan Karnataka, Portfolio" />
+  <meta name="author" content="Fardin Rehman" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fardin Rehman — Computer Science Engineer | Full-Stack Developer" />
+  <meta property="og:description" content="Building practical software, intelligent solutions and meaningful digital experiences." />
+  <meta property="og:image" content="ezgif-401ab6cea54b4b2c-jpg/ezgif-frame-001.jpg" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=2.5" />
+</head>
+<body class="light-theme">
+
+  <!-- ─── PRELOADER ──────────────────────────────────── -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-monogram">FR</div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar" id="preloader-bar"></div>
+      </div>
+      <p class="preloader-label">Fardin Rehman • Engineering Portfolio</p>
+    </div>
+  </div>
+
+  <!-- ─── DESKTOP CURSOR GLOW ───────────────────────── -->
+  <div id="cursor-glow" aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- ─── FLOATING NAVIGATION ────────────────────────── -->
+  <header id="site-header">
+    <nav id="navbar" class="floating-nav" aria-label="Main Navigation">
+      <div class="nav-left">
+        <a href="#hero" class="brand-link" aria-label="Fardin Rehman Home">
+          <span class="brand-monogram">FR</span>
+          <span class="brand-name">Fardin Rehman</span>
+        </a>
+      </div>
+
+      <div class="nav-center">
+        <ul class="nav-menu" role="menubar">
+          <li role="none"><a href="#about" class="nav-item" role="menuitem">About</a></li>
+          <li role="none"><a href="#what-i-do" class="nav-item" role="menuitem">What I Do</a></li>
+          <li role="none"><a href="#skills" class="nav-item" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#projects" class="nav-item" role="menuitem">Projects</a></li>
+          <li role="none"><a href="#experience" class="nav-item" role="menuitem">Experience</a></li>
+          <li role="none"><a href="#education" class="nav-item" role="menuitem">Education</a></li>
+          <li role="none"><a href="#achievements" class="nav-item" role="menuitem">Achievements</a></li>
+          <li role="none"><a href="#contact" class="nav-item" role="menuitem">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <button type="button" class="btn-resume-nav" id="open-resume-nav-btn">
+          <span>Resume</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+        </button>
+        <a href="#contact" class="btn-nav-cta">Let's Connect</a>
+        <button class="hamburger-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <ul class="mobile-links">
+          <li><a href="#about" class="mobile-link">About Me</a></li>
+          <li><a href="#what-i-do" class="mobile-link">What I Do</a></li>
+          <li><a href="#skills" class="mobile-link">My Skills</a></li>
+          <li><a href="#projects" class="mobile-link">Featured Projects</a></li>
+          <li><a href="#experience" class="mobile-link">Experience & Internships</a></li>
+          <li><a href="#education" class="mobile-link">Education</a></li>
+          <li><a href="#achievements" class="mobile-link">Certifications & Achievements</a></li>
+          <li><a href="#resume" class="mobile-link">Resume</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+          <a href="mailto:fardinrehman63@gmail.com" class="mobile-contact-pill">fardinrehman63@gmail.com</a>
+          <div class="mobile-socials">
+            <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/fardin-rehman-04618032a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/fardin.rehman/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ─── 4. HERO SECTION ───────────────────────────── -->
+    <section id="hero" class="hero-section">
+      <!-- Sticky Canvas Container for Scroll Frame Animation -->
+      <div class="hero-sticky-stage">
+        <!-- Canvas renders the 122 high-resolution frames smoothly on scroll -->
+        <canvas id="hero-frame-canvas" aria-label="Interactive scroll animation of Fardin Rehman with engineering precision timepiece"></canvas>
+        <div class="hero-canvas-overlay"></div>
+
+        <!-- Floating Hero Information Layer -->
+        <div class="hero-layer">
+          <div class="container hero-container">
+            <div class="hero-intro-card" id="hero-card">
+              <!-- Availability / Status Badge -->
+              <div class="status-pill">
+                <span class="status-dot"></span>
+                <span class="status-text">Open to Software Development & Technology Opportunities</span>
+              </div>
+
+              <!-- Primary Branding & Title -->
+              <h1 class="hero-headline">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name">Fardin Rehman</span>
+              </h1>
+
+              <div class="hero-subhead">
+                <span class="role-badge">Computer Science Engineering Student</span>
+                <span class="role-separator">•</span>
+                <span class="role-desc">Full-Stack Developer • AI/ML Enthusiast • Problem Solver</span>
+              </div>
+
+              <p class="hero-copy">
+                "Building practical software, intelligent solutions and meaningful digital experiences."
+              </p>
+
+              <!-- Primary CTAs -->
+              <div class="hero-cta-group">
+                <a href="#projects" class="btn-primary">
+                  <span>View My Work</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                  <span>Let's Connect</span>
+                </a>
+              </div>
+
+              <!-- Secondary Professional Links -->
+              <div class="hero-quick-links">
+                <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer" class="quick-link" title="GitHub Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/fardin-rehman-04618032a/" target="_blank" rel="noopener noreferrer" class="quick-link" title="LinkedIn Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/fardin.rehman/" target="_blank" rel="noopener noreferrer" class="quick-link" title="Instagram Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  <span>Instagram</span>
+                </a>
+                <a href="mailto:fardinrehman63@gmail.com" class="quick-link" title="Email Fardin">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Dynamic Story Stream Filling Blank Space During Scroll -->
+            <div class="hero-story-stream" id="hero-story-stream" aria-live="polite">
+              <!-- Stage 1: Craftsmanship & Precision (Scroll ~22% - 46%) -->
+              <div class="story-panel" id="story-panel-1">
+                <div class="story-stage-indicator">
+                  <span class="story-step-badge">Stage 01 • Craftsmanship</span>
+                  <div class="story-progress-dots">
+                    <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+                  </div>
+                </div>
+                <h3 class="story-heading">Engineering with Precision</h3>
+                <p class="story-subheading">Every component has an exact purpose.</p>
+                <p class="story-description">
+                  "Just like the balance wheel and escapement of a fine timepiece, dependable software architecture demands modular cohesion, zero friction, and immaculate attention to detail."
+                </p>
+                <div class="story-chips">
+                  <div class="story-chip">
+                    <span class="chip-icon">⚙️</span>
+                    <div>
+                      <strong>Modular Code</strong>
+                      <small>Decoupled, reusable components</small>
+                    </div>
+                  </div>
+                  <div class="story-chip">
+                    <span class="chip-icon">⚡</span>
+                    <div>
+                      <strong>Zero Friction</strong>
+                      <small>Responsive, high-performance UX</small>
+                    </div>
+                  </div>
+                  <div class="story-chip">
+                    <span class="chip-icon">📐</span>
+                    <div>
+                      <strong>System Thinking</strong>
+                      <small>Clean separation of concerns</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stage 2: Architecture Deconstructed (Scroll ~46% - 76%) -->
+              <div class="story-panel" id="story-panel-2">
+                <div class="story-stage-indicator">
+                  <span class="story-step-badge accent">Stage 02 • Architecture</span>
+                  <div class="story-progress-dots">
+                    <span class="dot"></span><span class="dot active"></span><span class="dot"></span>
+                  </div>
+                </div>
+                <h3 class="story-heading">Full-Stack Anatomy Deconstructed</h3>
+                <p class="story-subheading">Synchronized layers working as one mechanism.</p>
+                <div class="story-layers-list">
+                  <div class="story-layer-item">
+                    <span class="layer-num">01</span>
+                    <div class="layer-content">
+                      <strong>Interactive Surface</strong>
+                      <span class="layer-tech">React.js • Modern CSS • HTML5 Canvas</span>
+                      <p>Tactile micro-interactions, responsive states & accessibility.</p>
+                    </div>
+                  </div>
+                  <div class="story-layer-item">
+                    <span class="layer-num">02</span>
+                    <div class="layer-content">
+                      <strong>Core Movement (APIs)</strong>
+                      <span class="layer-tech">Node.js • Express.js • REST APIs</span>
+                      <p>Robust routing, business validation & asynchronous dispatch.</p>
+                    </div>
+                  </div>
+                  <div class="story-layer-item">
+                    <span class="layer-num">03</span>
+                    <div class="layer-content">
+                      <strong>Escapement (Database)</strong>
+                      <span class="layer-tech">MongoDB • SQL / MySQL Schemas</span>
+                      <p>Indexed collections, aggregation pipelines & data integrity.</p>
+                    </div>
+                  </div>
+                  <div class="story-layer-item">
+                    <span class="layer-num">04</span>
+                    <div class="layer-content">
+                      <strong>Intelligent Automation</strong>
+                      <span class="layer-tech">Python • OpenCV • TensorFlow • Prompt Eng</span>
+                      <p>Computer vision face recognition & deep-learning models.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stage 3: Ideas -> Code -> Impact (Scroll ~76% - 95%) -->
+              <div class="story-panel" id="story-panel-3">
+                <div class="story-stage-indicator">
+                  <span class="story-step-badge gold">Stage 03 • Impact</span>
+                  <div class="story-progress-dots">
+                    <span class="dot"></span><span class="dot"></span><span class="dot active"></span>
+                  </div>
+                </div>
+                <h3 class="story-heading">Ideas → Code → Impact</h3>
+                <p class="story-subheading">From theoretical algorithms to real-world deployment.</p>
+                <p class="story-description">
+                  "Building practical software that empowers real users — from smart QR ordering platforms to computer vision automation."
+                </p>
+                <div class="story-metrics-mini">
+                  <div class="s-metric">
+                    <span class="s-metric-val">4+</span>
+                    <span class="s-metric-lbl">Full-Stack Projects</span>
+                  </div>
+                  <div class="s-metric">
+                    <span class="s-metric-val">1</span>
+                    <span class="s-metric-lbl">Software Internship</span>
+                  </div>
+                  <div class="s-metric">
+                    <span class="s-metric-val">11+</span>
+                    <span class="s-metric-lbl">Certifications</span>
+                  </div>
+                </div>
+                <div class="story-action-cta">
+                  <a href="#projects" class="btn-primary btn-sm">
+                    <span>Explore Featured Projects ↓</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scroll Visual Indicator Badge -->
+            <div class="hero-scroll-cue" id="hero-scroll-cue">
+              <div class="cue-mouse">
+                <span class="cue-wheel"></span>
+              </div>
+              <span class="cue-text">Scroll to inspect precision layers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Precision Story Label that appears dynamically mid-scroll -->
+        <div class="hero-scroll-caption" id="hero-scroll-caption">
+          <span class="caption-tag">Precision Engineering</span>
+          <h2 class="caption-text">"Every layer of code is built like a precision movement."</h2>
+        </div>
+      </div>
+
+      <!-- Scroll height track allowing the 122 frame canvas to step through smoothly -->
+      <div class="hero-scroll-track" id="hero-scroll-track"></div>
+    </section>
+
+    <!-- ─── 7. ABOUT ME ───────────────────────────────── -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">01 • Profile</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Ideas • Code • Impact</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-narrative">
+            <p class="about-lead">
+              I’m <strong>Fardin Rehman</strong>, a Computer Science Engineering student passionate about software development, full-stack applications, AI, machine learning and building practical digital solutions.
+            </p>
+            <p class="about-body">
+              "Motivated and detail-oriented Computer Science Engineering student with a strong foundation in software development, web technologies, and machine learning fundamentals. Passionate about building real-world applications using modern technologies, prompt engineering, and AI-powered solutions. Experienced in developing full-stack web applications, QR-based ordering systems, and intelligent automation projects. A quick learner with strong problem-solving skills, eager to contribute to innovative software development teams."
+            </p>
+
+            <!-- Passion Pillars -->
+            <div class="about-pillars">
+              <span class="pillar-tag">Learning new technologies</span>
+              <span class="pillar-tag">Working on real-world projects</span>
+              <span class="pillar-tag">Solving technical problems</span>
+              <span class="pillar-tag">Building useful applications</span>
+              <span class="pillar-tag">Exploring AI-powered solutions</span>
+            </div>
+
+            <!-- Verified Personal Metrics (Section 23 - Authentic only!) -->
+            <div class="about-metrics-row">
+              <div class="metric-card">
+                <span class="metric-value">4+</span>
+                <span class="metric-label">Real-World Projects</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">1</span>
+                <span class="metric-label">Industry Internship</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">12+</span>
+                <span class="metric-label">Certifications & Training</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">8.91</span>
+                <span class="metric-label">Diploma CGPA (7.53 B.E.)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portrait & Identity Cards -->
+          <div class="about-visual-column">
+            <!-- Authentic Portrait with 3D Tilt & Glass Edge -->
+            <div class="portrait-card" id="portrait-card">
+              <div class="portrait-media">
+                <img src="ezgif-401ab6cea54b4b2c-jpg/ezgif-frame-001.jpg" alt="Fardin Rehman — Portrait" class="portrait-img" loading="lazy" />
+                <div class="portrait-sheen"></div>
+              </div>
+              <div class="portrait-caption">
+                <div class="portrait-name">Fardin Rehman</div>
+                <div class="portrait-meta">Hassan, Karnataka, India • B.E. CSE</div>
+              </div>
+            </div>
+
+            <!-- 4 Identity Cards with Subtle Hover Animation -->
+            <div class="identity-cards-grid">
+              <div class="identity-card" data-tilt>
+                <div class="identity-icon">💡</div>
+                <h4>Problem Solver</h4>
+                <p>Translating complex requirements into clean algorithms and dependable workflows.</p>
+              </div>
+              <div class="identity-card" data-tilt>
+                <div class="identity-icon">📚</div>
+                <h4>Continuous Learner</h4>
+                <p>Proactively studying state-of-the-art tools across full-stack and modern AI.</p>
+              </div>
+              <div class="identity-card" data-tilt>
+                <div class="identity-icon">🤝</div>
+                <h4>Team Player</h4>
+                <p>Collaborative communicator eager to contribute positively to engineering teams.</p>
+              </div>
+              <div class="identity-card" data-tilt>
+                <div class="identity-icon">⚡</div>
+                <h4>Tech Enthusiast</h4>
+                <p>Passionate about technology's potential to create measurable everyday impact.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 8. WHAT I DO ──────────────────────────────── -->
+    <section id="what-i-do" class="section what-i-do-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-kicker">02 • Capabilities</span>
+          <h2 class="section-title">What I Do</h2>
+          <p class="section-subtitle">Three pillars of my engineering approach</p>
+        </div>
+
+        <div class="capabilities-grid">
+          <!-- Capability 1: BUILD -->
+          <div class="capability-card" data-tilt>
+            <div class="cap-header">
+              <span class="cap-badge">01</span>
+              <span class="cap-title-keyword">BUILD</span>
+            </div>
+            <h3 class="cap-name">Full-Stack Web Applications</h3>
+            <p class="cap-text">
+              Build practical full-stack web applications with modern technologies and clear user workflows. From intuitive React interfaces to reliable Node.js/Express backends and database architectures.
+            </p>
+            <ul class="cap-list">
+              <li>Responsive user interfaces with React & CSS architecture</li>
+              <li>RESTful API development with Express & Node.js</li>
+              <li>Database modeling & queries with MongoDB & MySQL</li>
+              <li>Cloud media storage & role-based authentication</li>
+            </ul>
+          </div>
+
+          <!-- Capability 2: INTELLIGENCE -->
+          <div class="capability-card featured-cap" data-tilt>
+            <div class="cap-header">
+              <span class="cap-badge accent">02</span>
+              <span class="cap-title-keyword accent">INTELLIGENCE</span>
+            </div>
+            <h3 class="cap-name">AI, ML & Computer Vision</h3>
+            <p class="cap-text">
+              Explore artificial intelligence, machine learning, computer vision and prompt engineering to develop smart automation tools, facial recognition systems, and deep-learning caption generation.
+            </p>
+            <ul class="cap-list">
+              <li>Computer vision pipelines using OpenCV & Python</li>
+              <li>Deep learning models using TensorFlow & Keras (CNN, LSTM)</li>
+              <li>Prompt engineering & ChatGPT workflow optimization</li>
+              <li>Intelligent automation for everyday tasks</li>
+            </ul>
+          </div>
+
+          <!-- Capability 3: IMPROVE -->
+          <div class="capability-card" data-tilt>
+            <div class="cap-header">
+              <span class="cap-badge">03</span>
+              <span class="cap-title-keyword">IMPROVE</span>
+            </div>
+            <h3 class="cap-name">Engineering & Optimization</h3>
+            <p class="cap-text">
+              Continuously improve coding ability, UI/UX, problem-solving and deployment-ready development through rigorous practice, testing, refactoring, and hackathons.
+            </p>
+            <ul class="cap-list">
+              <li>Clean, maintainable, self-documenting code</li>
+              <li>Aesthetic, accessible user experience principles</li>
+              <li>Version control, collaborative workflows & debugging</li>
+              <li>Performance tuning & edge-case consideration</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- What I'm Focused On (Section 21) -->
+        <div class="focus-strip">
+          <div class="focus-intro">
+            <span class="focus-tag">Current Direction</span>
+            <h4>What I'm Focused On</h4>
+          </div>
+          <div class="focus-items">
+            <div class="focus-item">
+              <span class="focus-action">BUILD:</span>
+              <span class="focus-desc">Real-world web applications with clear workflows and practical user experiences.</span>
+            </div>
+            <div class="focus-item">
+              <span class="focus-action">LEARN:</span>
+              <span class="focus-desc">AI, machine learning, computer vision and modern full-stack engineering.</span>
+            </div>
+            <div class="focus-item">
+              <span class="focus-action">IMPROVE:</span>
+              <span class="focus-desc">Code quality, UI/UX, problem solving and deployment-ready development.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 9 & 10. TECHNICAL SKILLS & UNIVERSE ────────── -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-kicker">03 • Technical Skills</span>
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">Categorized expertise & interactive technology universe</p>
+        </div>
+
+        <!-- 10. Interactive Technology Universe Canvas -->
+        <div class="universe-container">
+          <div class="universe-header">
+            <div class="universe-title">Interactive Technology Universe</div>
+            <div class="universe-hint">Hover or click orbiting nodes to explore technologies connected to Fardin</div>
+          </div>
+          <div class="universe-stage">
+            <canvas id="universe-canvas" width="900" height="480" aria-label="Interactive skill universe"></canvas>
+            <div class="universe-active-panel" id="universe-active-panel">
+              <span class="u-tag" id="u-category-name">Select a node</span>
+              <h4 id="u-category-title">Explore Core Stack</h4>
+              <p id="u-category-items">Hover over the orbit categories to inspect specific tools and libraries.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categorized Skills Grid (Accessible & Responsive) -->
+        <div class="skills-categorized-grid">
+          <!-- Category: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">💻</div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip"><span class="chip-dot"></span>Python</span>
+              <span class="skill-chip"><span class="chip-dot"></span>JavaScript</span>
+              <span class="skill-chip"><span class="chip-dot"></span>C</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Java (Basic)</span>
+            </div>
+          </div>
+
+          <!-- Category: Web Development -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🌐</div>
+              <h3>Web Development</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip"><span class="chip-dot"></span>HTML5</span>
+              <span class="skill-chip"><span class="chip-dot"></span>CSS3</span>
+              <span class="skill-chip"><span class="chip-dot"></span>JavaScript (ES6+)</span>
+              <span class="skill-chip highlight"><span class="chip-dot"></span>React.js</span>
+              <span class="skill-chip highlight"><span class="chip-dot"></span>Node.js</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Express.js</span>
+            </div>
+          </div>
+
+          <!-- Category: Databases -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🗄️</div>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip highlight"><span class="chip-dot"></span>MongoDB</span>
+              <span class="skill-chip"><span class="chip-dot"></span>SQL</span>
+              <span class="skill-chip"><span class="chip-dot"></span>MySQL</span>
+            </div>
+          </div>
+
+          <!-- Category: AI / ML -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🧠</div>
+              <h3>AI / Machine Learning</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip"><span class="chip-dot"></span>Artificial Intelligence</span>
+              <span class="skill-chip"><span class="chip-dot"></span>ML Fundamentals</span>
+              <span class="skill-chip highlight"><span class="chip-dot"></span>Prompt Engineering</span>
+              <span class="skill-chip"><span class="chip-dot"></span>TensorFlow</span>
+              <span class="skill-chip"><span class="chip-dot"></span>OpenCV</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Computer Vision</span>
+            </div>
+          </div>
+
+          <!-- Category: Tools -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🛠️</div>
+              <h3>Tools & Environment</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip"><span class="chip-dot"></span>Git</span>
+              <span class="skill-chip"><span class="chip-dot"></span>GitHub</span>
+              <span class="skill-chip"><span class="chip-dot"></span>VS Code</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Jupyter Notebook</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Postman</span>
+            </div>
+          </div>
+
+          <!-- Category: Cloud, Services & Design -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">☁️</div>
+              <h3>Cloud, Services & Design</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip"><span class="chip-dot"></span>Cloudinary</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Firebase</span>
+              <span class="skill-chip"><span class="chip-dot"></span>UI/UX Principles</span>
+              <span class="skill-chip"><span class="chip-dot"></span>Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20. Strengths (What I Bring) -->
+        <div class="strengths-wrapper">
+          <div class="strengths-header">
+            <h4>What I Bring</h4>
+            <p>Core interpersonal and analytical strengths</p>
+          </div>
+          <div class="strengths-grid">
+            <div class="strength-item">
+              <span class="strength-bullet">✓</span>
+              <span>Problem Solving</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-bullet">✓</span>
+              <span>Team Collaboration</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-bullet">✓</span>
+              <span>Quick Learning</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-bullet">✓</span>
+              <span>Communication</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-bullet">✓</span>
+              <span>Adaptability</span>
+            </div>
+            <div class="strength-item">
+              <span class="strength-bullet">✓</span>
+              <span>Analytical Thinking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22. Professional Interests -->
+        <div class="interests-wrapper">
+          <span class="interests-label">Areas of Primary Interest:</span>
+          <div class="interests-chips">
+            <span class="interest-pill">Software Development</span>
+            <span class="interest-pill">Web Development</span>
+            <span class="interest-pill">Artificial Intelligence</span>
+            <span class="interest-pill">Machine Learning</span>
+            <span class="interest-pill">Full-Stack Development</span>
+            <span class="interest-pill">Prompt Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 11, 13, 14. FEATURED PROJECTS ─────────────── -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">04 • Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications built with precision and modern stacks</p>
+        </div>
+
+        <!-- 14. Primary Dominant Featured Project: Rebellion Sports Arena -->
+        <div class="flagship-project-card" id="flagship-project" data-tilt>
+          <div class="flagship-grid">
+            <!-- Left: Immersive Visual Showcase -->
+            <div class="flagship-visual">
+              <div class="project-mockup mockup-rebellion">
+                <div class="mockup-screen-bar">
+                  <span class="mock-dot red"></span>
+                  <span class="mock-dot yellow"></span>
+                  <span class="mock-dot green"></span>
+                  <span class="mock-url">rebellion-sports-arena.app</span>
+                </div>
+                <div class="mockup-content-preview">
+                  <div class="preview-badge-pill">Smart QR Ordering & Table Booking</div>
+                  <h3 class="preview-hero-text">Rebellion Sports Arena</h3>
+                  <p class="preview-subtext">Multi-panel operational suite for customer QR dining, admin control & real-time chef dispatch.</p>
+                  <div class="preview-mini-stats">
+                    <div class="p-stat"><span>3 Panels</span><small>Customer • Admin • Chef</small></div>
+                    <div class="p-stat"><span>Real-Time</span><small>Order Tracking</small></div>
+                    <div class="p-stat"><span>Digital</span><small>Bill Generation</small></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Detailed Spec & Actions -->
+            <div class="flagship-details">
+              <div class="project-category-badge">Primary Featured Project • Full-Stack</div>
+              <h3 class="flagship-title">Rebellion Sports Arena — Smart QR Ordering System</h3>
+              <p class="flagship-desc">
+                A complete QR-based food ordering and table-booking platform designed to eliminate order delays and streamline restaurant management. Enables guests to scan unique table QR codes, browse menus, customize dishes, and monitor kitchen progress live.
+              </p>
+
+              <div class="project-feature-list">
+                <div class="feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Customer Panel:</strong> Instant QR browsing, table reservation & live kitchen status</span>
+                </div>
+                <div class="feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Admin Panel:</strong> Menu CRUD, revenue telemetry, staff assignment & table occupancy</span>
+                </div>
+                <div class="feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Chef Panel:</strong> Live KDS (Kitchen Display System) with instant order tickets</span>
+                </div>
+                <div class="feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Digital Billing:</strong> Automated itemized bills with order breakdown</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-primary open-case-study-btn" data-project="rebellion">
+                  <span>View Case Study</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid of Other Featured Projects (Projects 2, 3, 4) -->
+        <div class="projects-subgrid">
+          <!-- Project 2: DR. DECORS -->
+          <article class="project-grid-card" data-tilt>
+            <div class="card-visual visual-decors">
+              <div class="card-visual-top">
+                <span class="card-cat-badge">E-Commerce Platform</span>
+              </div>
+              <div class="card-visual-inner">
+                <div class="card-brand-glyph">🛋️</div>
+                <div class="card-visual-title">DR. DECORS</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">DR. DECORS — E-Commerce Platform</h3>
+              <p class="card-desc">
+                A modern e-commerce platform for curated home décor products featuring full catalog management and role-based authentication.
+              </p>
+              <div class="card-feature-bullets">
+                <span>• Product browsing & categorization</span>
+                <span>• Admin dashboard & inventory controls</span>
+                <span>• Role-based authentication & Cloudinary media</span>
+              </div>
+              <div class="card-tech-chips">
+                <span>React</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Cloudinary</span>
+              </div>
+              <div class="card-actions">
+                <button type="button" class="btn-card-case-study open-case-study-btn" data-project="decors">
+                  Case Study Details →
+                </button>
+                <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer" class="card-icon-link" aria-label="GitHub for DR. DECORS">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Facial Recognition Attendance System -->
+          <article class="project-grid-card" data-tilt>
+            <div class="card-visual visual-attendance">
+              <div class="card-visual-top">
+                <span class="card-cat-badge">Computer Vision & AI</span>
+              </div>
+              <div class="card-visual-inner">
+                <div class="card-brand-glyph">📷</div>
+                <div class="card-visual-title">Facial Attendance</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Facial Recognition Attendance System</h3>
+              <p class="card-desc">
+                An automated attendance management system using facial recognition and computer vision to log verified entries instantaneously.
+              </p>
+              <div class="card-feature-bullets">
+                <span>• Real-time face detection & feature encoding</span>
+                <span>• Instant database match & attendance logging</span>
+                <span>• Significant reduction in manual roll-call effort</span>
+              </div>
+              <div class="card-tech-chips">
+                <span>Python</span><span>OpenCV</span><span>Machine Learning</span><span>NumPy</span>
+              </div>
+              <div class="card-actions">
+                <button type="button" class="btn-card-case-study open-case-study-btn" data-project="attendance">
+                  Case Study Details →
+                </button>
+                <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer" class="card-icon-link" aria-label="GitHub for Attendance System">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Image Caption Generator -->
+          <article class="project-grid-card" data-tilt>
+            <div class="card-visual visual-caption">
+              <div class="card-visual-top">
+                <span class="card-cat-badge">Deep Learning & NLP</span>
+              </div>
+              <div class="card-visual-inner">
+                <div class="card-brand-glyph">🖼️</div>
+                <div class="card-visual-title">Caption AI</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Image Caption Generator</h3>
+              <p class="card-desc">
+                An AI application that automatically synthesizes coherent natural language captions for uploaded images using a hybrid CNN-LSTM deep learning architecture.
+              </p>
+              <div class="card-feature-bullets">
+                <span>• Visual feature extraction via CNN layers</span>
+                <span>• Sequence prediction & sentence synthesis via LSTM</span>
+                <span>• Natural caption generation on arbitrary input images</span>
+              </div>
+              <div class="card-tech-chips">
+                <span>Python</span><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>LSTM</span>
+              </div>
+              <div class="card-actions">
+                <button type="button" class="btn-card-case-study open-case-study-btn" data-project="caption">
+                  Case Study Details →
+                </button>
+                <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer" class="card-icon-link" aria-label="GitHub for Image Caption Generator">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 16. EXPERIENCE ────────────────────────────── -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">05 • Industry</span>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle">Hands-on practical development experience in industry environments</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-entry">
+            <div class="timeline-meta">
+              <span class="timeline-period">January 2024 — May 2024</span>
+              <span class="timeline-status-badge">Completed Internship</span>
+            </div>
+            <div class="timeline-card" data-tilt>
+              <div class="role-header">
+                <div>
+                  <h3 class="role-title">Software Development Intern</h3>
+                  <div class="role-company">e-SwaRa Technologies</div>
+                </div>
+                <div class="role-loc">Internship • Technical Team</div>
+              </div>
+              <p class="role-overview">
+                Practical industry experience working on software development tasks, hands-on application codebases, and real-world debugging workflows.
+              </p>
+              <ul class="role-bullets">
+                <li>Assisted in software development projects across the development lifecycle</li>
+                <li>Worked directly on application development, feature additions, and system debugging</li>
+                <li>Collaborated with the engineering team to build practical, real-world software solutions</li>
+                <li>Significantly improved programming logic, code readability, and collaborative problem-solving skills</li>
+              </ul>
+              <div class="role-tags">
+                <span>Software Development</span>
+                <span>Application Debugging</span>
+                <span>Team Collaboration</span>
+                <span>Hands-on Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 17 & 24. EDUCATION & JOURNEY ──────────────── -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-kicker">06 • Academic Foundation</span>
+          <h2 class="section-title">Education & Journey</h2>
+          <p class="section-subtitle">Consistent academic record in Computer Science Engineering</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree 1: B.E. at Rajeev Institute of Technology -->
+          <div class="edu-card active-degree" data-tilt>
+            <div class="edu-status-tag">
+              <span class="live-dot"></span>
+              <span>Currently Pursuing</span>
+            </div>
+            <div class="edu-icon">🎓</div>
+            <h3 class="edu-institution">Rajeev Institute of Technology</h3>
+            <div class="edu-location">Hassan, Karnataka, India</div>
+            <div class="edu-degree">Bachelor of Engineering (B.E.)</div>
+            <div class="edu-major">Computer Science Engineering</div>
+            <div class="edu-footer-meta">
+              <div class="edu-cgpa">
+                <span class="cgpa-num">7.53</span>
+                <span class="cgpa-label">Current CGPA</span>
+              </div>
+              <div class="edu-grad">
+                <span class="grad-year">2027</span>
+                <span class="grad-label">Expected Graduation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Degree 2: Diploma at Govt Polytechnic -->
+          <div class="edu-card" data-tilt>
+            <div class="edu-status-tag completed">
+              <span>Completed Diploma</span>
+            </div>
+            <div class="edu-icon">📜</div>
+            <h3 class="edu-institution">Government Polytechnic</h3>
+            <div class="edu-location">Mosalehosahalli, Karnataka, India</div>
+            <div class="edu-degree">Diploma in Engineering</div>
+            <div class="edu-major">Computer Science Engineering</div>
+            <div class="edu-footer-meta">
+              <div class="edu-cgpa">
+                <span class="cgpa-num">8.91</span>
+                <span class="cgpa-label">Distinction CGPA</span>
+              </div>
+              <div class="edu-grad">
+                <span class="grad-year">Completed</span>
+                <span class="grad-label">Solid Foundation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 24. My Journey Timeline -->
+        <div class="journey-flow-box">
+          <h4 class="journey-title">My Journey at a Glance</h4>
+          <div class="journey-steps">
+            <div class="journey-step">
+              <div class="step-circle">1</div>
+              <div class="step-info">
+                <strong>Diploma in CSE</strong>
+                <span>Govt. Polytechnic, Mosalehosahalli</span>
+                <small>8.91 CGPA Foundation</small>
+              </div>
+            </div>
+            <div class="journey-arrow">→</div>
+            <div class="journey-step">
+              <div class="step-circle highlight">2</div>
+              <div class="step-info">
+                <strong>Software Development Intern</strong>
+                <span>e-SwaRa Technologies</span>
+                <small>Jan 2024 — May 2024</small>
+              </div>
+            </div>
+            <div class="journey-arrow">→</div>
+            <div class="journey-step">
+              <div class="step-circle">3</div>
+              <div class="step-info">
+                <strong>B.E. Computer Science</strong>
+                <span>Rajeev Institute of Technology</span>
+                <small>Pursuing • 7.53 CGPA</small>
+              </div>
+            </div>
+            <div class="journey-arrow">→</div>
+            <div class="journey-step">
+              <div class="step-circle future">4</div>
+              <div class="step-info">
+                <strong>Expected Graduation</strong>
+                <span>Software Engineering Career</span>
+                <small>Class of 2027</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 18 & 19. CERTIFICATIONS & ACHIEVEMENTS ────── -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">07 • Verification</span>
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <p class="section-subtitle">Rigorous training, hackathons, and certified job simulations</p>
+        </div>
+
+        <!-- 19. Highlighted Major Achievement -->
+        <div class="highlight-achievement-banner">
+          <div class="banner-badge">🏆 Highlighted Achievement</div>
+          <div class="banner-grid">
+            <div class="banner-icon-area">
+              <div class="trophy-glyph">⚡</div>
+            </div>
+            <div class="banner-text">
+              <h3>National-Level Hackathon Participant — HACKABHIGNA</h3>
+              <p>
+                Represented with innovative technical problem-solving under strict time constraints, collaborating with fellow engineering peers to conceptualize and build software solutions for real challenges.
+              </p>
+            </div>
+            <div class="banner-tag">
+              <span>National Hackathon</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18. Verified Certifications Grid -->
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">IBM SkillsBuild</div>
+            <h4 class="cert-name">Getting Started with Artificial Intelligence</h4>
+            <p class="cert-desc">Core artificial intelligence principles, algorithms, and practical applications.</p>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">UniAthena</div>
+            <h4 class="cert-name">Master ChatGPT</h4>
+            <p class="cert-desc">Prompt engineering, large language model interfaces, and practical automation.</p>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">Deloitte / Forage</div>
+            <h4 class="cert-name">Technology Job Simulation</h4>
+            <p class="cert-desc">Practical enterprise technology consulting, systems design, and solution modeling.</p>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">Deloitte / Forage</div>
+            <h4 class="cert-name">Data Analytics Job Simulation</h4>
+            <p class="cert-desc">Data analysis methodologies, pattern identification, and executive dashboards.</p>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">Deloitte / Forage</div>
+            <h4 class="cert-name">Cyber Security Job Simulation</h4>
+            <p class="cert-desc">Security assessments, vulnerability analysis, and infrastructure safety principles.</p>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">MongoDB University</div>
+            <h4 class="cert-name">Introduction to MongoDB</h4>
+            <p class="cert-desc">NoSQL schema design, document modeling, aggregation pipelines, and indexing.</p>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">Infosys Springboard</div>
+            <h4 class="cert-name">Java for Beginners</h4>
+            <p class="cert-desc">Object-oriented programming fundamentals, data structures, and core syntax in Java.</p>
+          </div>
+
+          <!-- Cert 8 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">Infosys Springboard</div>
+            <h4 class="cert-name">IoT Platforms Overview</h4>
+            <p class="cert-desc">Internet of Things architectures, sensory interfaces, and telemetry platforms.</p>
+          </div>
+
+          <!-- Cert 9 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">Ramaiah Academy</div>
+            <h4 class="cert-name">Contemporary Front-End Web Development Workshop</h4>
+            <p class="cert-desc">Modern responsive UI workflows, component lifecycles, and front-end tools.</p>
+          </div>
+
+          <!-- Cert 10 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">INNOOVATUM</div>
+            <h4 class="cert-name">UX/UI Design & Figma Workshop</h4>
+            <p class="cert-desc">User journeys, wireframing, high-fidelity prototypes, and component systems in Figma.</p>
+          </div>
+
+          <!-- Cert 11 -->
+          <div class="cert-card">
+            <div class="cert-issuer-badge">ABC Technology Training</div>
+            <h4 class="cert-name">Career Orientation & Technical Upskilling</h4>
+            <p class="cert-desc">Software engineering career readiness, technical interviews, and industry best practices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 25. RESUME SECTION ────────────────────────── -->
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        <div class="resume-cta-box">
+          <div class="resume-cta-content">
+            <span class="resume-tag">Document Overview</span>
+            <h2 class="resume-headline">Want the complete picture?</h2>
+            <p class="resume-desc">
+              "Explore my experience, technical skills, projects and education in an executive-ready resume format."
+            </p>
+            <div class="resume-actions">
+              <button type="button" class="btn-primary" id="view-resume-modal-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <span>View Resume</span>
+              </button>
+              <button type="button" class="btn-secondary" id="download-resume-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Print / Save Resume</span>
+              </button>
+            </div>
+          </div>
+          <div class="resume-preview-sheet" aria-hidden="true">
+            <div class="sheet-header">
+              <div class="sheet-name">FARDIN REHMAN</div>
+              <div class="sheet-sub">B.E. Computer Science Engineering • Full-Stack Developer</div>
+            </div>
+            <div class="sheet-lines">
+              <div class="sheet-line w80"></div>
+              <div class="sheet-line w90"></div>
+              <div class="sheet-line w60"></div>
+              <div class="sheet-section-title"></div>
+              <div class="sheet-line w75"></div>
+              <div class="sheet-line w85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── 26. CONTACT ───────────────────────────────── -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info-column">
+            <span class="section-kicker">08 • Get in Touch</span>
+            <h2 class="contact-title">Let's Connect</h2>
+            <p class="contact-lead">
+              "I’m always open to discussing new opportunities, collaborations, projects or having a tech conversation."
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Email -->
+              <a href="mailto:fardinrehman63@gmail.com" class="contact-detail-card">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Email</span>
+                  <span class="detail-val">fardinrehman63@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- Phone -->
+              <a href="tel:+919686105352" class="contact-detail-card">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Phone</span>
+                  <span class="detail-val">+91 9686105352</span>
+                </div>
+              </a>
+
+              <!-- Location -->
+              <div class="contact-detail-card static">
+                <div class="detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-val">Hassan, Karnataka, India</span>
+                </div>
+              </div>
+
+              <!-- Profiles -->
+              <div class="contact-social-row">
+                <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer" class="contact-social-pill">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>github.com/FardinRehman</span>
+                </a>
+                <a href="https://www.linkedin.com/in/fardin-rehman-04618032a/" target="_blank" rel="noopener noreferrer" class="contact-social-pill">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>linkedin.com/in/fardin-rehman</span>
+                </a>
+                <a href="https://www.instagram.com/fardin.rehman/" target="_blank" rel="noopener noreferrer" class="contact-social-pill contact-social-instagram">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  <span>@fardin.rehman</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-column">
+            <div class="contact-form-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <form id="contact-form" class="direct-contact-form" novalidate>
+                <div class="form-field">
+                  <label for="contact-name">Your Name <span class="req">*</span></label>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. John Doe" required />
+                </div>
+                <div class="form-field">
+                  <label for="contact-email">Your Email <span class="req">*</span></label>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. john@example.com" required />
+                </div>
+                <div class="form-field">
+                  <label for="contact-message">Message <span class="req">*</span></label>
+                  <textarea id="contact-message" name="message" rows="5" placeholder="Share your project goals, inquiry, or say hello..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary form-submit-btn" id="contact-submit-btn">
+                  <span>Say Hello →</span>
+                </button>
+                <div class="form-status-alert" id="form-feedback" role="alert" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── 28. FOOTER ────────────────────────────────── -->
+  <footer id="footer" class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-accent">R</span> Fardin Rehman
+          </div>
+          <p class="footer-tagline">Built with passion • Designed for impact</p>
+        </div>
+        <div class="footer-social-links">
+          <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+          <span class="sep">•</span>
+          <a href="https://www.linkedin.com/in/fardin-rehman-04618032a/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+          <span class="sep">•</span>
+          <a href="https://www.instagram.com/fardin.rehman/" target="_blank" rel="noopener noreferrer" class="footer-link footer-instagram">Instagram</a>
+          <span class="sep">•</span>
+          <a href="mailto:fardinrehman63@gmail.com" class="footer-link">Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Fardin Rehman. All rights reserved.</p>
+        <p class="footer-location">Hassan, Karnataka, India • Computer Science Engineering</p>
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top">
+          <span>Back to Top ↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── 15. PROJECT CASE STUDY MODAL ──────────────── -->
+  <div id="case-study-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="modal-project-title">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div class="modal-header-meta">
+          <span class="modal-kicker" id="modal-project-cat">Project Detail</span>
+          <h2 id="modal-project-title" class="modal-title">Rebellion Sports Arena</h2>
+        </div>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">✕</button>
+      </div>
+
+      <div class="modal-body" id="modal-project-content">
+        <!-- Injected dynamically based on project clicked -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── RESUME VIEWER MODAL ───────────────────────── -->
+  <div id="resume-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="resume-title">
+    <div class="modal-sheet resume-modal-sheet">
+      <div class="modal-header">
+        <div>
+          <span class="modal-kicker">Curriculum Vitae</span>
+          <h2 id="resume-title" class="modal-title">Fardin Rehman — Resume</h2>
+        </div>
+        <div class="modal-header-actions">
+          <button type="button" class="btn-print-resume" id="print-resume-btn">Print / PDF</button>
+          <button type="button" class="modal-close-btn" id="resume-close-btn" aria-label="Close resume modal">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-body resume-document-body" id="printable-resume">
+        <!-- Clean, verified executive resume -->
+        <div class="cv-header">
+          <h1>FARDIN REHMAN</h1>
+          <div class="cv-contact-line">
+            <span>Hassan, Karnataka, India</span> • 
+            <span>+91 9686105352</span> • 
+            <a href="mailto:fardinrehman63@gmail.com">fardinrehman63@gmail.com</a> • 
+            <a href="https://github.com/FardinRehman/" target="_blank" rel="noopener noreferrer">github.com/FardinRehman</a> • 
+            <a href="https://www.linkedin.com/in/fardin-rehman-04618032a/" target="_blank" rel="noopener noreferrer">LinkedIn</a> • 
+            <a href="https://www.instagram.com/fardin.rehman/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+          <div class="cv-title-tag">Computer Science Engineering Student • Full-Stack Developer • AI/ML Enthusiast</div>
+        </div>
+
+        <hr class="cv-divider" />
+
+        <div class="cv-section">
+          <h3>PROFESSIONAL SUMMARY</h3>
+          <p>
+            Motivated and detail-oriented Computer Science Engineering student with a strong foundation in software development, web technologies, and machine learning fundamentals. Passionate about building real-world applications using modern technologies, prompt engineering, and AI-powered solutions. Experienced in developing full-stack web applications, QR-based ordering systems, and intelligent automation projects. A quick learner with strong problem-solving skills, eager to contribute to innovative software development teams.
+          </p>
+        </div>
+
+        <div class="cv-section">
+          <h3>EDUCATION</h3>
+          <div class="cv-item">
+            <div class="cv-row">
+              <strong>Rajeev Institute of Technology, Hassan</strong>
+              <span class="cv-date">Expected 2027</span>
+            </div>
+            <div class="cv-row muted">
+              <span>Bachelor of Engineering (B.E.) — Computer Science Engineering</span>
+              <span><strong>CGPA: 7.53</strong> (Currently Pursuing)</span>
+            </div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-row">
+              <strong>Government Polytechnic, Mosalehosahalli</strong>
+              <span class="cv-date">Completed</span>
+            </div>
+            <div class="cv-row muted">
+              <span>Diploma in Computer Science Engineering</span>
+              <span><strong>CGPA: 8.91</strong> (Distinction)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h3>EXPERIENCE</h3>
+          <div class="cv-item">
+            <div class="cv-row">
+              <strong>Software Development Intern — e-SwaRa Technologies</strong>
+              <span class="cv-date">January 2024 — May 2024</span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Assisted in software development projects across the development lifecycle</li>
+              <li>Worked on hands-on application development, feature integration, and system debugging</li>
+              <li>Collaborated with senior development team members on real-world software solutions</li>
+              <li>Improved programming syntax, problem-solving, and deployment fundamentals through industry experience</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h3>TECHNICAL SKILLS</h3>
+          <div class="cv-skill-line"><strong>Programming Languages:</strong> Python, JavaScript, C, Java (Basic)</div>
+          <div class="cv-skill-line"><strong>Web Development:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, Node.js, Express.js</div>
+          <div class="cv-skill-line"><strong>Databases:</strong> MongoDB, SQL, MySQL</div>
+          <div class="cv-skill-line"><strong>AI & ML:</strong> Artificial Intelligence, Machine Learning Fundamentals, Prompt Engineering, TensorFlow, OpenCV, Computer Vision</div>
+          <div class="cv-skill-line"><strong>Tools & Cloud:</strong> Git, GitHub, VS Code, Jupyter Notebook, Postman, Cloudinary, Firebase</div>
+          <div class="cv-skill-line"><strong>Design:</strong> UI/UX Principles, Figma</div>
+        </div>
+
+        <div class="cv-section">
+          <h3>KEY PROJECTS</h3>
+          <div class="cv-item">
+            <div class="cv-row">
+              <strong>Rebellion Sports Arena — Smart QR Ordering System</strong>
+              <span class="cv-date">React, Node.js, Express.js, MongoDB, JavaScript</span>
+            </div>
+            <p>Developed a full-stack QR food ordering and table booking platform with dedicated Customer, Admin, and Chef KDS panels, live status tracking, and automated digital billing.</p>
+          </div>
+          <div class="cv-item">
+            <div class="cv-row">
+              <strong>DR. DECORS — E-Commerce Platform</strong>
+              <span class="cv-date">React, Node.js, Express.js, MongoDB, Cloudinary</span>
+            </div>
+            <p>Built a modern home décor e-commerce system with catalog filtering, administrative inventory dashboard, role-based authentication, and Cloudinary media management.</p>
+          </div>
+          <div class="cv-item">
+            <div class="cv-row">
+              <strong>Facial Recognition Attendance System</strong>
+              <span class="cv-date">Python, OpenCV, Machine Learning</span>
+            </div>
+            <p>Automated attendance management using computer vision face detection and feature matching, reducing manual roll-call overhead.</p>
+          </div>
+          <div class="cv-item">
+            <div class="cv-row">
+              <strong>Image Caption Generator</strong>
+              <span class="cv-date">Python, TensorFlow, Keras, CNN, LSTM</span>
+            </div>
+            <p>Trained a hybrid deep learning model extracting image features with a CNN and generating coherent descriptive natural language sentences with an LSTM.</p>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h3>CERTIFICATIONS & ACHIEVEMENTS</h3>
+          <ul class="cv-bullets">
+            <li><strong>HACKABHIGNA:</strong> National-Level Hackathon Participant</li>
+            <li><strong>IBM SkillsBuild:</strong> Getting Started with Artificial Intelligence</li>
+            <li><strong>UniAthena:</strong> Master ChatGPT</li>
+            <li><strong>Deloitte / Forage:</strong> Technology Job Simulation, Data Analytics Job Simulation, Cyber Security Job Simulation</li>
+            <li><strong>MongoDB University:</strong> Introduction to MongoDB</li>
+            <li><strong>Infosys Springboard:</strong> Java for Beginners, IoT Platforms Overview</li>
+            <li><strong>Ramaiah Academy:</strong> Contemporary Front-End Web Development Workshop</li>
+            <li><strong>INNOOVATUM:</strong> UX/UI Design & Figma Workshop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Engine -->
+  <script src="script.js?v=2.5"></script>
+</body>
+</html>

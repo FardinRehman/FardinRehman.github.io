@@ -1,0 +1,11 @@
+# Python & local dev server
+__pycache__/
+*.pyc
+dev_server.py
+
+# System & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
